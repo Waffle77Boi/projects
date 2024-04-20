@@ -1,7 +1,11 @@
  // Defined variables
+ 
 const name = "Joshua Boyd";
+
 const interest = "data science and Japan";
+
 const careerGoal = "have a career in data science and earn enough to move to Japan";
+
 const improvementGoal = "improve skills to one day have a decent job";
 
 // Function to display information
