@@ -1,0 +1,18 @@
+import os
+import shutil
+
+text=(".doc",".pdf")
+exel=(".xlsx")
+
+def is_text(file):
+    return os.path.splitext(file)[1] in text
+def is_exel(file):
+    return os.path.splitext(file)[2] in exel
+
+os.chdir("/Users/joshuaboyd/Business")
+
+for file in os.listdir():
+    if is_text(file):
+        shutil.move(file, "Users/joshuaboyd/Business/text")
+    elif is_exel(file):
+        shutil.move(file, "Users/joshuaboyd/Business/exel")
