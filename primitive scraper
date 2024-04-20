@@ -1,0 +1,11 @@
+import requests
+from bs4 import BeautifulSoup 
+def scrape_Tokyo():
+    Page= requests.get("https://hmletjapan.com/en/property/")
+    soup = BeautifulSoup(Page.content, "html.parser")
+    locations = soup.find_all('span', class_='tag_link')
+    price= soup.find_all('dd', class_='property_list-des')
+    for location, prices in zip(locations, price):
+        print(location.text+ ' - ' +prices.text)
+
+scrape_Tokyo()
