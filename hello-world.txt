@@ -1,0 +1,6 @@
+from py improt print("Hello world!")
+from js improt console.log("Hello world!");
+from shell import echo Hello world!
+form <html> import <p>Hello world!
+This is the foundations i know but have yet to learn all the others.
+-->stay tuned for more updates once more is known.
